@@ -34,7 +34,7 @@ const address = (
 );
 
 const CircleContainer = tw.div`
-  w-24 h-20 sm:h-24 rounded-full
+  w-24 h-24 rounded-full
   inline-flex items-center justify-center
   bg-white text-gray-500 text-sm font-bold
 `;
@@ -46,7 +46,7 @@ const access = (
 );
 
 const primaryActionText = "予約する";
-const primaryActionUrl = "#";
+const primaryActionUrl = "https://beauty.hotpepper.jp/CSP/kr/reserve/?storeId=H000668420";
 
 const OpeningHoursContainer = tw.div`border-x-0 border-y border-white pt-2`;
 const OpeningHoursContent = styled.div`
@@ -98,7 +98,7 @@ export default function Maps(){
               {access}
             </CircleContainer>
           </FlexContainer>
-          <a href={primaryActionUrl} className="action primaryAction">
+          <a href={primaryActionUrl} className="action primaryAction" target="_blank" rel="noopener noreferrer">
             {primaryActionText}
           </a>
           <OpeningHoursContainer>

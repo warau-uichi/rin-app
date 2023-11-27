@@ -23,7 +23,7 @@ const Heading = tw.h1`text-3xl sm:text-5xl md:text-6xl lg:text-5xl font-black le
 const Paragraph = tw.p`max-w-md my-8 lg:my-5 lg:my-8 sm:text-sm lg:text-xs xl:text-sm leading-loose`
 
 const Actions = styled.div`
-  ${tw`mb-8 lg:mb-24`}
+  ${tw`mb-12 lg:mb-24`}
   .action {
     ${tw`text-center inline-block w-full sm:w-48 py-4 font-semibold tracking-wide rounded hocus:outline-none focus:outline transition duration-300`}
   }
@@ -45,7 +45,7 @@ export default function Hero() {
     </>
   ),
   description = "「琳」は、漢字の「王」が宝石・玉を、そして「林」が整えることを表しています。これらの意味から、「琳 -rin-」という名前には、あなたが玉のように滑らかで均整の取れた美しさを持ち続け、その美しさが内側から自然と放たれるように整えるという願いが込められています。私たちは、お客様一人一人を貴重な宝石のように大切にし、心からのケアでサポートいたします。お身体の美しさと心の健康を追求する場所、それが【琳 -rin-】です。至福の時間をお過ごしください。",
-  primaryActionUrl = "#",
+  primaryActionUrl = "https://beauty.hotpepper.jp/CSP/kr/reserve/?storeId=H000668420",
   primaryActionText = "予約する"
   return (
     <Container>
@@ -56,7 +56,7 @@ export default function Hero() {
             <Heading>{heading}</Heading>
             <Paragraph>{description}</Paragraph>
             <Actions>
-              <a href={primaryActionUrl} className="action primaryAction">
+              <a href={primaryActionUrl} target="_blank" rel="noopener noreferrer" className="action primaryAction">
                 {primaryActionText}
               </a>
             </Actions>
