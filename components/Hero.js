@@ -14,7 +14,7 @@ const Container = tw.div`relative -mx-8 -mt-8 mb-8`
 const TwoColumn = tw.div`flex flex-col lg:flex-row bg-cyan`
 const LeftColumn = tw.div`ml-8 mr-8 xl:pl-10 pt-8`
 const RightColumn = styled.div`
-  background-image: url("/images/S__40288520.jpg");
+  background-image: url("/images/hero-img.jpg");
   ${tw`bg-green-500 bg-cover bg-center xl:ml-24 h-96 lg:h-auto lg:w-1/2 lg:flex-1`}
 `
 
@@ -23,7 +23,7 @@ const Heading = tw.h1`text-3xl sm:text-5xl md:text-6xl lg:text-5xl font-black le
 const Paragraph = tw.p`max-w-md my-8 lg:my-5 lg:my-8 sm:text-sm lg:text-xs xl:text-sm leading-loose`
 
 const Actions = styled.div`
-  ${tw`mb-8 lg:mb-0`}
+  ${tw`mb-8 lg:mb-24`}
   .action {
     ${tw`text-center inline-block w-full sm:w-48 py-4 font-semibold tracking-wide rounded hocus:outline-none focus:outline transition duration-300`}
   }
