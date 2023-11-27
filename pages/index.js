@@ -1,19 +1,26 @@
 import Link from "next/link"
-import Layout from '../components/Layout'
+import Layout from '@/components/Layout'
+import AnimationReveal from '@/components/AnimationReveal'
+import Hero from '@/components/Hero'
+import ThreeColMenu from '@/components/ThreeColMenues'
+import TwoColumnWithImageAndProfilePictureReview from "@/components/TwoColumnWithImageAndProfilePictureReview"
+import TwoColumnWithImageAndProfilePictureReview2 from "@/components/TwoColumnWithImageAndProfilePictureReview2"
+import TwoColumnWithImageAndProfilePictureReview3 from "@/components/TwoColumnWithImageAndProfilePictureReview3"
+import TwoColumnWithImageAndProfilePictureReview4 from "@/components/TwoColumnWithImageAndProfilePictureReview4"
+import Maps from "@/components/Maps"
 
 export default function Home() {
   return (
     <Layout title='メインページ | からだにやさしいサロン 琳 -RIN-'>
-      <div className='min-h-screen py-0 px-2 flex flex-col justify-center items-center'>
-        <div>
-          <Link href="/blog" className="bg-white mr-8  hover:bg-slate-300 text-cyan-400 px-4 py-12 rounded">
-            ブログページ
-          </Link>
-          <Link href="/news" className="bg-white ml-8 hover:bg-slate-300 text-cyan-400 px-4 py-12 rounded">
-            お知らせ
-          </Link>
-        </div>
-      </div>
+      <AnimationReveal>
+        <Hero />
+        <ThreeColMenu />
+        <TwoColumnWithImageAndProfilePictureReview textOnLeft={true} />
+        <TwoColumnWithImageAndProfilePictureReview2 textOnLeft={false} />
+        <TwoColumnWithImageAndProfilePictureReview3 textOnLeft={true} />
+        <TwoColumnWithImageAndProfilePictureReview4 textOnLeft={false} />
+        <Maps />
+      </AnimationReveal>
     </Layout>
   )
 }

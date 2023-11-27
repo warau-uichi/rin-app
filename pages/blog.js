@@ -1,7 +1,12 @@
 import Link from 'next/link'
+
+import tw from "twin.macro";
+
 import Layout from '../components/Layout'
 import BlogPostList from '../components/BlogPostList'
 import {getAllBlogPosts} from '../libs/blog'
+
+const BackToMain = tw.div`flex cursor-pointer mt-12 hover:bg-yellow-400`
 
 export default function Blog({sortedPosts}) {
   return (
@@ -11,9 +16,9 @@ export default function Blog({sortedPosts}) {
           sortedPosts.map((post) => <BlogPostList key={post.id} post={post} />)}
       </ul>
       <Link href='/'>
-        <div className='flex cursor-pointer mt-12 hover:bg-yellow-400'>
+        <BackToMain>
           <span>メインページに戻る</span>
-        </div>
+        </BackToMain>
       </Link>
     </Layout>
   )
