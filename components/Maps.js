@@ -3,7 +3,7 @@ import tw from 'twin.macro'
 import styled from 'styled-components'
 import localImage from '../public/images/rin_logo.jpg'
 
-const Container = tw.div`relative -mx-8 -my-8`
+const Container = tw.div`relative -mx-8 -my-8 xl:bg-cyan`
 const CopyRight = tw.p`text-xs w-full text-center pt-10`
 const Content = tw.div`max-w-screen-xl mx-auto py-8 text-white flex flex-wrap bg-cyan items-center`
 const Infomation = styled.div`
@@ -34,9 +34,9 @@ const address = (
 );
 
 const CircleContainer = tw.div`
-  w-24 h-24 rounded-full
+  h-32 max-[375px]:h-28 max-[320px]:h-24 sm:h-40 w-40 rounded-full
   inline-flex items-center justify-center
-  bg-white text-gray-500 text-sm font-bold
+  bg-white text-gray-800 text-sm sm:text-base lg:text-lg font-bold
 `;
 const access = (
   <>

@@ -15,7 +15,7 @@ const TwoColumn = tw.div`flex flex-col lg:flex-row bg-cyan`
 const LeftColumn = tw.div`ml-8 mr-8 xl:pl-10 pt-8`
 const RightColumn = styled.div`
   background-image: url("/images/hero-img.jpg");
-  ${tw`bg-green-500 bg-cover bg-center xl:ml-24 h-96 lg:h-auto lg:w-1/2 lg:flex-1`}
+  ${tw`bg-green-500 bg-cover bg-top xl:ml-24 h-96 lg:h-auto lg:w-1/2 lg:flex-1`}
 `
 
 const Content = tw.div`mt-10 lg:mb-10 flex flex-col sm:items-center lg:items-stretch`
