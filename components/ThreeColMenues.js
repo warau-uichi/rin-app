@@ -8,7 +8,7 @@ const Container = tw.div`relative`
 const Content = tw.div`max-w-screen-xl mx-auto mb-12 text-gray-500`
 
 const HeadingWithControl = tw.div`flex flex-wrap mb-2 justify-center sm:justify-normal sm:mb-0`
-const Heading = tw.h2`text-4xl sm:text-5xl tracking-wide w-full`
+const Heading = tw.h2`text-4xl sm:text-5xl tracking-wide w-full text-center lg:text-left`
 const Paragraph = tw.p`text-base sm:text-sm tracking-wide leading-loose my-4 grow`
 const headingdesc =  (
     <>

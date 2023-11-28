@@ -9,7 +9,7 @@ import 'slick-carousel/slick/slick.css'
 const Container = tw.div`relative mb-8`
 const Content = tw.div`max-w-screen-xl mx-auto mb-12 text-gray-500`
 
-const SectionHeading = tw.h2`text-4xl sm:text-5xl tracking-wide text-center`
+const SectionHeading = tw.h2`text-4xl sm:text-5xl tracking-wide text-left`
 const Subheading = tw.h5`font-bold mb-4`
 
 const PrimaryButton = tw.button`px-8 py-3 font-bold rounded bg-cyan text-gray-100 hocus:bg-cyan-500 hocus:text-gray-200 focus:outline focus:outline-none transition duration-300`
@@ -50,7 +50,7 @@ const TextContainer = styled.div(props => [
 ])
 
 const HeadingTitle = tw(SectionHeading)`lg:text-left leading-tight`
-const Description = tw.p`text-base sm:text-sm tracking-wide leading-loose my-6`
+const Description = tw.p`text-base sm:text-sm tracking-wide leading-loose my-6 text-left`
 
 const QuoteContainer = tw.div`flex mt-2 sm:mt-4`;
 const Quote = tw.p`ml-2 text-sm font-semibold`;

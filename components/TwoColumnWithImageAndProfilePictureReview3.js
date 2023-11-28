@@ -6,8 +6,8 @@ import { DollarSign, Clock, ChevronLeft, ChevronRight } from 'react-feather'
 
 import 'slick-carousel/slick/slick.css'
 
-const Container = tw.div`relative mb-12`
-const Content = tw.div`max-w-screen-xl mx-auto text-gray-500`
+const Container = tw.div`relative mb-8`
+const Content = tw.div`max-w-screen-xl mx-auto text-gray-500 mb-20`
 
 const SectionHeading = tw.h2`text-4xl sm:text-5xl tracking-wide text-center`
 const Subheading = tw.h5`font-bold mb-4`
