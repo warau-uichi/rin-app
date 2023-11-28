@@ -57,7 +57,7 @@ const Quote = tw.p`ml-2 text-sm font-semibold`;
 
 export default function TwoColumnWithImageAndProfilePictureReview({
   subheading = "",
-  heading = "Eフェイスリフトで表情筋トレコース",
+  heading = "e-フェイスリフトで表情筋トレコース",
   description = "鍼は使わす、EMS(微弱電流)を使って表情筋を動かしていき、お顔のたるみアップや血流改善、眼精疲労などに効果が期待できます。お化粧は落として美容液を入れながら施術するので角質層まで浸透してお肌のトーンアップやシワにも効果的です。",
   testimonials = null,
   textOnLeft = false

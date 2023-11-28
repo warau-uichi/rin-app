@@ -8,16 +8,14 @@ const Container = tw.div`relative`
 const Content = tw.div`max-w-screen-xl mx-auto mb-12 text-gray-500`
 
 const HeadingWithControl = tw.div`flex flex-wrap mb-2 justify-center sm:justify-normal sm:mb-0`
-const Heading = tw.h2`text-4xl sm:text-5xl tracking-wide w-full`
+const Heading = tw.h2`text-4xl sm:text-5xl tracking-wide w-full text-center lg:text-right`
 const Paragraph = tw.p`text-base sm:text-sm tracking-wide leading-loose my-4 grow`
 const headingdesc =  (
     <>
-        サイマティクスセラピーとは、細胞の振動の乱れを音と振動で共鳴させて、
-        <br />
-        自然治癒力を活性化する音信療法です。
+        全身のリンパや経絡に沿ったアロマオイルトリートメント、全身のツボや筋肉を丁寧にもみほぐすボディケア、そして足裏の反射区と膝下の経絡に焦点を当てた足つぼマッサージを提供しています。
     </>
 )
-const Controls = tw.div`flex items-center`
+const Controls = tw.div`flex items-center mb-4 max-[425px]:mb-0`
 const PrimaryButtonBase = tw.button`px-8 py-3 font-bold rounded bg-cyan text-white hocus:bg-cyan-500 hocus:text-gray-200 focus:outline focus:outline-none transition duration-300`
 const ControlButton = styled(PrimaryButtonBase)`
   ${tw`mt-4 sm:mt-0 first:ml-0 ml-6 rounded-full p-2`}
@@ -82,25 +80,25 @@ export default function ThreeColMenu() {
   /* Change this according to your needs */
   const cards = [
     {
-      imageSrc: "/images/S__40288592.jpg",
-      title: "サイマティクス美肌メニュー",
-      description: "シミ・美白コースとニキビコースの2つをご用意しました。週1回の施術が理想的です。",
+      imageSrc: "/images/S__40288517.jpg",
+      title: "アロマオイルマッサージ",
+      description: "全身のリンパや経絡に沿って、オイルトリートメントしていきます。お好きなアロマオイルを数種類お選びいただいてブレンドします。",
+      locationText: "60分",
+      pricingText: "6,500円(男性: 7,500円)",
+    },
+    {
+      imageSrc: "/images/S__40288580.jpg",
+      title: "ボディケアマッサージ",
+      description: "全身のツボや筋肉を丁寧にもみほぐし、首や肩こり、腰のお疲れを和らげていきます。",
+      locationText: "30分",
+      pricingText: "2,400円",
+    },
+    {
+      imageSrc: "/images/S__40288533.jpg",
+      title: "足つぼマッサージ",
+      description: "足裏にある80以上の反射区を刺激、また膝下の経絡に沿って丁寧にマッサージし、血行を良くします。むくみや冷えのお悩みにも",
       locationText: "30分",
       pricingText: "3,000円",
-    },
-    {
-      imageSrc: "/images/S__40288550.jpg",
-      title: "美容鍼(全身+お顔の鍼)",
-      description: "腕足頭に鍼を打ち、気を循環させながらお顔に鍼を打ちます。お悩みに合わせた鍼も可能。髪の毛よりも細い鍼を使用します。",
-      locationText: "50分",
-      pricingText: "5,500円",
-    },
-    {
-      imageSrc: "/images/S__40288594.jpg",
-      title: "炭酸パック+鎮静パック",
-      description: "7万ppm炭酸パックで毛穴を引き締め、肌に艶を与えます。エピダームプラスパックで鎮静まで行います。",
-      locationText: "50分",
-      pricingText: "5,500円",
     },
   ]
 
@@ -108,7 +106,7 @@ export default function ThreeColMenu() {
     <Container>
       <Content>
         <HeadingWithControl>
-          <Heading>サイマティクスセラピーと美容</Heading>
+          <Heading>アロマ・ボディケア・足つぼマッサージ</Heading>
           <Paragraph>{headingdesc}</Paragraph>
           <Controls>
             <PrevButton onClick={sliderRef?.slickPrev}><ChevronLeft/></PrevButton>
