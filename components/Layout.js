@@ -4,6 +4,7 @@ const siteName= '琳-rin- からだにやさしいサロン | 大阪市 上新�
 const description = '大阪市内、阪急京都線上新庄駅近くの鍼灸美容サロンです。アロマオイル、ボディケア、足つぼマッサージを提供しています。お客様一人ひとりの体の疲れやお悩みに合わせた施術で、心身ともに癒しとリフレッシュをお届けします。サイマティクスセラピー、e-フェイスリフト、鍼灸、黄土よもぎ蒸しもご用意しており、全身の美と健康をサポートします。';
 const url = 'https://rin-salon.vercel.app/';
 const imgUrl = 'https://rin-salon.vercel.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Frin_logo.b87a028b.jpg&w=3840&q=75';
+const gSiteVerificationCode = process.env.G_SITE_VERIFICATION_CODE;
 
 export default function Layout({children}) {
   return (
@@ -19,6 +20,7 @@ export default function Layout({children}) {
         <meta property="og:type" content="website" />
         <meta property="og:image" content={imgUrl} />
         <meta name="twitter:card" content="summary_large_image" />
+        <meta name="google-site-verification" content={gSiteVerificationCode} />
         <meta name="msapplication-square70x70logo" content="/site-tile-70x70.png" />
         <meta name="msapplication-square150x150logo" content="/site-tile-150x150.png" />
         <meta name="msapplication-wide310x150logo" content="/site-tile-310x150.png" />
