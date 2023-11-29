@@ -1,10 +1,14 @@
+import Link from 'next/link'
 import Image from 'next/image'
 import tw from 'twin.macro'
 import styled from 'styled-components'
+import { Instagram } from 'react-feather'
 import localImage from '../public/images/rin_logo.jpg'
+import lineImage from '../public/images/LINE_Brand_icon.png'
 
 const Container = tw.div`relative -mx-8 -my-8 xl:bg-cyan`
 const CopyRight = tw.p`text-xs w-full text-center pt-10`
+const SnsList = tw.div`w-full inline-flex justify-center xl:justify-start pt-10 mx-8`
 const Content = tw.div`max-w-screen-xl mx-auto py-8 text-white flex flex-wrap bg-cyan items-center`
 const Infomation = styled.div`
   ${tw `grow mx-8`}
@@ -83,6 +87,13 @@ const embededMap = (
     </iframe>
   </>
 );
+const SnsLink = styled(Link)`
+  ${tw`mr-4`}
+  svg {${tw`stroke-white hover:stroke-gray-700 transition duration-300 w-9 h-9`}}
+  img {${tw`w-9 h-9`}}
+`;
+const instaUrl = 'https://www.instagram.com/rin_karadaniyasasii/';
+const lineUrl = 'https://lin.ee/9Dfc5fq'
 
 export default function Maps(){
 
@@ -133,6 +144,14 @@ export default function Maps(){
         <MapContainer>
           {embededMap}
         </MapContainer>
+        <SnsList>
+          <SnsLink href={instaUrl} target="_blank" rel="noopener noreferrer">
+            <Instagram />
+          </SnsLink>
+          <SnsLink href={lineUrl} target="_blank" rel="noopener noreferrer">
+            <Image src={lineImage} alt="公式LINE" />
+          </SnsLink>
+        </SnsList>
         <CopyRight>© 琳-rin- からだにやさしいサロン, All Rights Reserved</CopyRight>
       </Content>
     </Container>

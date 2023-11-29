@@ -8,10 +8,11 @@ import TwoColumnWithImageAndProfilePictureReview from "@/components/TwoColumnWit
 import TwoColumnWithImageAndProfilePictureReview2 from "@/components/TwoColumnWithImageAndProfilePictureReview2"
 import TwoColumnWithImageAndProfilePictureReview3 from "@/components/TwoColumnWithImageAndProfilePictureReview3"
 import Maps from "@/components/Maps"
+import Sns from "@/components/Sns"
 
 export default function Home() {
   return (
-    <Layout title='メインページ | からだにやさしいサロン 琳 -RIN-'>
+    <Layout>
       <AnimationReveal>
         <Hero />
         <ThreeColMenu />
