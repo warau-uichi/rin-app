@@ -7,8 +7,9 @@ import localImage from '../public/images/rin_logo.jpg'
 import lineImage from '../public/images/LINE_Brand_icon.png'
 
 const Container = tw.div`relative -mx-8 -my-8 xl:bg-cyan`
-const CopyRight = tw.p`text-xs w-full text-center pt-10`
-const SnsList = tw.div`w-full inline-flex justify-center xl:justify-start pt-10 mx-8`
+const EndOfFooter = tw.div`w-full flex flex-wrap justify-center xl:justify-start items-end pt-8 mx-8`
+const CopyRight = tw.p`text-xs text-center`
+const SnsList = tw.div`md:grow mb-8 md:mb-0 inline-flex`
 const Content = tw.div`max-w-screen-xl mx-auto py-8 text-white flex flex-wrap bg-cyan items-center`
 const Infomation = styled.div`
   ${tw `grow mx-8`}
@@ -66,7 +67,7 @@ const OpeningHoursContent = styled.div`
 `;
 
 const MapContainer = styled.div`
-  ${tw`h-80 w-10/12 xl:w-3/5 pr-0 xl:pr-8 pt-8 xl:pt-0 my-0 mx-auto`}
+  ${tw`h-96 w-10/12 xl:w-3/5 pr-0 xl:pr-8 pt-8 xl:pt-0 my-0 mx-auto`}
   .map {
     ${tw`w-full h-full`}
   }
@@ -144,15 +145,17 @@ export default function Maps(){
         <MapContainer>
           {embededMap}
         </MapContainer>
-        <SnsList>
-          <SnsLink href={instaUrl} target="_blank" rel="noopener noreferrer">
-            <Instagram />
-          </SnsLink>
-          <SnsLink href={lineUrl} target="_blank" rel="noopener noreferrer">
-            <Image src={lineImage} alt="公式LINE" />
-          </SnsLink>
-        </SnsList>
-        <CopyRight>© 琳-rin- からだにやさしいサロン, All Rights Reserved</CopyRight>
+        <EndOfFooter>
+          <SnsList>
+            <SnsLink href={instaUrl} target="_blank" rel="noopener noreferrer">
+              <Instagram />
+            </SnsLink>
+            <SnsLink href={lineUrl} target="_blank" rel="noopener noreferrer">
+              <Image src={lineImage} alt="公式LINE" />
+            </SnsLink>
+          </SnsList>
+          <CopyRight>© 琳-rin- からだにやさしいサロン, All Rights Reserved</CopyRight>
+        </EndOfFooter>
       </Content>
     </Container>
   );
